@@ -1,0 +1,75 @@
+site_name: 'WP-WebAuthn 文档'
+site_description: 'WP-WebAuthn 插件简体中文文档。'
+site_author: 'Axton'
+site_url: 'https://doc.flyhigher.top/wp-webauthn/zh-CN/'
+
+# Repository
+repo_name: 'yrccondor/wp-webauthn'
+repo_url: 'https://github.com/yrccondor/wp-webauthn'
+edit_uri: ""
+
+# Copyright
+copyright: 'Copyright &copy; 2018 - 2020 AxtonYao'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'zh'
+  logo: 'img/logo.png'
+  palette:
+    primary: 'black'
+    accent: 'indigo'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  include_search_page: false
+  search_index_only: true
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/yrccondor/wp-webauthn'
+    - type: 'home'
+      link: 'https://doc.flyhigher.top'
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - WP-Webauthn 文档: index.md
+  - WebAuthn: webauthn.md
+  - 插件安装与配置: config.md
+  - 短代码:
+    - 登录表单: shortcodes/login_form.md
+    - 注册认证器表单: shortcodes/register_form.md
+    - 测试按钮: shortcodes/verify_button.md
+    - 认证器列表: shortcodes/list.md
+  - 常见问题: faq.md
+  - Languages:
+    - 简体中文: 'https://doc.flyhigher.top/wp-webauthn/zh-CN/'
+    - English: 'https://doc.flyhigher.top/wp-webauthn/en-US/'
